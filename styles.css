@@ -1,0 +1,169 @@
+/* General Styles */
+body {
+    background-color: #121212;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+#search {
+    padding: 10px;
+    font-size: 1em;
+    width: 100%;
+    max-width: 300px;
+    border: none;
+    border-radius: 5px;
+}
+
+#movies-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.movie-card {
+    background-color: #81bef3;
+    border-radius: 10px;
+    padding: 20px;
+    width: calc(33.333% - 40px);
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+}
+
+.movie-card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.movie-card .movie-info {
+    margin-top: 10px;
+}
+
+.movie-card .movie-info h2 {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.movie-card .movie-info p {
+    margin: 5px 0;
+}
+
+.movie-card .links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.movie-card .links a {
+    background-color: #ff5722;
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.movie-card .links a:hover {
+    background-color: #e64a19;
+}
+
+#no-match {
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+.no-match-icon {
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    vertical-align: middle;
+}
+
+.social-icon:hover {
+    opacity: 0.8;
+}
+
+#tutorial {
+    margin-top: 20px;
+}
+
+#tutorial h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .movie-card {
+        width: calc(50% - 20px);
+    }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #search {
+        width: 100%;
+        max-width: none;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .movie-card {
+        width: calc(100% - 20px);
+    }
+
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    .movie-card .movie-info h2 {
+        font-size: 1.2em;
+    }
+}
+
+
+
+
+
